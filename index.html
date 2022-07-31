@@ -4,156 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HERITAGE CITIES</title>
+    <title>CSS GRID</title>
     <style>
-        h1{
-            text-decoration-line:underline ;
-            text-decoration-color: rgba(132, 240, 234, 0.589);
-        }
-    #first{
-        margin-bottom: 10px;
-        font-size: x-large;
-        font-style: italic;
-        font-weight: bold;
-        text-shadow:3px 3px 1px palevioletred ;
+    body{
+        font-family:arial;
     }
-    #second{
-        margin-bottom: 10px;
-        border: 3px solid red;
-        padding: 2px;
-        box-shadow: 2px 2px 3px 2px rgb(93, 197, 201);
-        background-color: rgb(100, 235, 123);
-        user-select: none;
-    } 
-    #image{
-        background-image: url(varanasi.webp);
-        border:4px solid black;
-        width:300px;
-        height: 300px;
-        position: static;
-        left:auto;
-        margin-bottom: 5px;
-        transition-property:width ;
+    #container{
+        background-color: rgb(176, 226, 226);
+        width: 700px;
+        margin:5px;
+        display: grid;
+        grid-template-rows:150px 150px 150px 150px 150px;
+        grid-template-columns: repeat(2,5fr);
+        grid-gap: 20px;
     }
-    #image:hover{
-        width:400px;
+    #item2{
+        background-color:red ;
+        background-image: url(apple.jpg);
+        font-weight: bolder;
+        font-size: xx-large;
     }
-    #image2{
-        background-image: url(ahmdbd.jpg);
-        background-repeat:no-repeat;
-        border:4px solid black;
-        width:250px;
-        height: 200px;
-        position: static;
-        left:auto;
-        margin-bottom: 5px;
-        transition-property:width;
+    #item3{
+        background-color:yellow;
+        background-image: url(mango3.jpg);
+        font-weight: bolder;
+        font-size: xx-large;
+       
     }
-        #image2:hover{
-        width:300px;
+    #item4{
+        background-color:rgb(241, 241, 155) ;
+        background-image:url(banana2.jpg);
+        font-weight: bolder;
+        font-size: xx-large;
     }
-    #image3{
-        background-image: url(ujjain.jpg);
-        background-repeat:no-repeat;
-        border:4px solid black;
-        width:250px;
-        height: 200px;
-        position: static;
-        left:auto;
-        margin-bottom: 5px;
-        transition-property:width;}
-        #image3:hover{
-        width:300px;
+    #item5{
+        background-color:lightsalmon;
+        background-image: url(litchi.jpg);
+        font-weight: bolder;
+        font-size: xx-large;
     }
-    #image4{
-        background-image: url(jpr.jpg);
-        background-repeat:no-repeat;
-        border:4px solid black;
-        width: 250px;
-        height: 200px;
-        position: static;
-        left:auto;
-        margin-bottom: 5px;
-        transition-property:width;}
-    #image4:hover{
-        width:300px;
+    #item6{
+        background-color:plum ;
+        background-image: url(plum.jpg);
+        font-weight: bolder;
+        font-size: xx-large;
     }
-    #image5{
-        background-image: url(patna.jpg);
-        background-repeat:no-repeat;
-        border:4px solid black;
-        width:250px;
-        height: 200px;
-        position: static;
-        left:auto;
-        margin-bottom: 5px;
-        transition-property:width ;}
-        #image5:hover{
-        width:300px;}
-        
+    #item7{
+        background-color:peachpuff ;
+        background-image: url(peach.jpg);
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+
+
     </style>
 </head>
 <body>
-    <h1>
-        HERITAGE CITIES IN INDIA
-    </h1>
-    <div style="color:rgb(112, 23, 196)" id="first">
-        VARANASI
-    </div>
-    <div id="image">
-      
-    </div>
-    <div id="second">
-        "Older than history, older than tradition, older even than legend,” was how author Mark Twain applauded the glorious city of Varanasi, sprawled along the banks of the holy Ganges river. One of the oldest living inhabitations of the world, this sacred city has been attracting pilgrims for centuries, many of whom have recorded its ancient grandeur in their manuscripts.
-
-Believed to be the abode of Lord Shiva, Varanasi is among the seven sacred cities in the country. Centuries of history, art and tradition have conflated to add colourful layers to Varanasi's aura, which is most spectacularly evident at its ghats (stepped banks of a river). An abode of travellers in search of holiness and divine providence, the ghats of the Ganges are the highlight of the spiritual scene of Varanasi. From the famous Ganga arti (a fire ritual) to cremation ceremonies, the ghats are the site of time-honoured rituals that are performed to this day.
-
-    </div> 
-    <div  style="color:rgb(112, 23, 196)"  id="first">
-        AHMEDABAD
-    </div>
-    <div id="image2">
-
-    </div>
-    <div id="second">
-        India's first UNESCO World Heritage City, Ahmedabad or Amdavad is steeped in history and tradition. Offering a seamless blend of spectacular architecture of centuries-old mosques and contemporary avant-garde design, Gujarat's biggest city is a bustling cosmopolitan hub. Ahmedabad is divided into two parts, cut into distinct sections by the Sabarmati river.
-
-On the eastern bank of the river stands the quaint old quarter, which is marked by winding lanes throbbing with tradition and culture, and on the eastern side, is the sprawling new town that has created a niche for itself with world-class urban planning. Add to this a vibrant array of street-food and colourful bazaars, and Ahmedabad becomes a tourist hub where one would be spoilt for choices.
-    </div>
-    <div  style="color:rgb(112, 23, 196)"  id="first">
-        UJJAIN
-    </div>
-    <div id="image3">
-
-    </div>
-    <div id="second">
-        “The town fallen from heaven to bring heaven to earth”, was how the famous Sanskrit poet Kalidasa had described the ancient city of Ujjain. Located at the heart of Madhya Pradesh, this ancient city is a labyrinth of bustling lanes that weave through temple clusters, earning Ujjain the moniker, “the city of temples”. One of the seven sacred sites of Hinduism, Ujjain is located on the banks of the holy Kshipra (Shipra) river.
-
-        The history of Ujjain can be dated back to 600 BC when it was home to hundreds of temples. It was once under the powerful Mauryan empire and even emperor Ashoka had once ruled over this region. It is said that once, when Ashoka was sent to Ujjain by his father Bindusara to subdue an uprising, he was injured and was treated by Buddhist monks, the king's first encounter with Buddhism, a religion he later turned to.
-          
-    </div>
-    <div  style="color:rgb(112, 23, 196)"  id="first">
-        JAIPUR
-    </div>
-    <div id="image4">
-
-    </div>
-    <div id="second">
-        The city of palaces and forts, interspersed with historical monuments and gardens that testify the grandeur of the Rajput kings, the newly minted UNESCO World Heritage Site of Jaipur is the gateway to the royal heritage of India. Also called Pink City, the capital of Rajasthan, remains suspended in time, with its heritage preserved in the overwhelming Hawa Mahal that gazes down at the bustling streets of Johari Bazaar.
-
-A little away from the city centre, which is resplendent with state-of-the-art cinemas/ movie theatres, eateries, multiplexes, museums and parks, lies the arid hilly country dotted with forts that earlier stood as armoured sentinels of Jaipur. The biggest and the most awe-inspiring is the Amber Fort, which leaves one humbled with its expansive fortifications and grandeur.
-
-    </div> 
-    <div  style="color:rgb(112, 23, 196)"  id="first">
-        PATNA
-    </div>
-    <div id="image5">
-
-    </div>
-    <div id="second">
-        One of the oldest living cities in the world, Patna, the capital of Bihar, stands on the banks of River Ganges, proudly cradling in its heart the city's heritage, patriotism and culture. A bustling city with old neighbourhoods, Patna's heritage spans across two millennia. An epicentre for various religions, the city was the stronghold of several dynasties, and thus boasts a treasure trove of culture and traditions. Patna retains its historic charm, and antiquity whispers at every corner accentuated by a vibrant blend of a multitude of cultures - Buddhist, Sufi, Jain, Sikh and Hindu.
-
-With a plethora of heritage structures strewn across its landscape, Patna has a diversity that extends to education and art as well. Once the capital of the mighty Mauryan emperor Ashoka, Kusumpura (as Patna was then called), transformed into Pushpapura, followed by Pataliputra and Azeemabad to finally become Patna. 
-    </div> 
+   <h1>
+    FRUITS
+   </h1>
+   <div id="container">
+   <div id="item2">APPLE</div>
+   <div id="item3">MANGO</div>
+   <div id="item4">BANANA</div>
+   <div id="item5">LITCHI</div>
+   <div id="item6">PLUM</div>
+   <div id="item7">PEACH</div>
+   </div>
 </body>
 </html>
